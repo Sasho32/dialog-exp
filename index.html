@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dialog</title>
+        <script
+            src="https://kit.fontawesome.com/927c2b99dd.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="./styles.css" />
+        <script src="./index.js" defer></script>
+    </head>
+    <body class="modal-opened">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque
+            exercitationem, sit recusandae tempore voluptatum placeat officia
+            quos nobis non animi est eos! Error dignissimos magnam quos
+            consequuntur fugiat dolor aliquam molestiae deleniti neque beatae in
+            autem, necessitatibus quaerat magni ex libero nam voluptate hic
+            rerum iure amet delectus? Qui nobis id ipsa repellendus harum
+            expedita nesciunt asperiores molestiae doloremque placeat similique
+            laboriosam dolorem sequi, ipsum delectus dolor eius minima quas
+            maiores nostrum totam? Expedita quis sed non sequi minus
+            accusantium, iusto quas facere aliquam. Ullam, aperiam? Veniam
+            facilis qui at eius earum animi officiis sit vel explicabo unde et,
+            laudantium ut assumenda ipsam eos libero eligendi officia inventore,
+            maxime, voluptate corporis dolor! Soluta velit nihil odit est et.
+            Minus corrupti eum cumque, ipsa quibusdam dolorem? Totam ullam,
+            error nisi tenetur amet dicta architecto cupiditate necessitatibus
+            fugit? Libero accusantium corrupti neque id facilis, vero saepe.
+            Officia facilis perferendis tempore ratione deleniti dignissimos
+            facere sunt aliquam, veritatis maxime id consequatur, vel dicta quas
+            distinctio harum fugit ipsa nisi. Ullam velit optio recusandae, vel
+            ducimus ratione exercitationem officia repellendus quasi adipisci!
+            Veritatis placeat, optio enim sint suscipit molestias dolorem,
+            maiores ab cum sapiente sed aliquam perferendis dolores quas vitae
+            consequuntur doloremque quam praesentium provident ipsum ex. Libero
+            architecto error officia ut veniam consequatur modi similique
+            molestias dignissimos voluptatum aliquam magni quidem aut autem ad,
+            dolore ipsam repellat pariatur nemo nisi repellendus eius
+            necessitatibus tempore ipsum. Aspernatur, et error? Cupiditate non
+            consequatur quisquam dolorem deserunt itaque beatae nihil labore
+            velit, vitae minus aperiam ipsam est eum eligendi tenetur architecto
+            quis assumenda a quam. Laudantium magnam repellendus debitis sunt
+            quod beatae a velit est neque accusamus praesentium iure ducimus
+            recusandae architecto, nostrum error tempore natus sit quia hic
+            adipisci. Eius officia quibusdam dolore quasi cupiditate eligendi
+            debitis fugit maiores quo, obcaecati dignissimos, excepturi error
+            rerum aperiam labore quis. Ab eum sequi dicta impedit, autem illo?
+            Tempora illum, perferendis explicabo voluptate maxime enim cum
+            obcaecati esse reiciendis nam error ad distinctio magni animi
+            deserunt quaerat ea commodi dolorem quia iusto beatae ut deleniti
+            recusandae tenetur. Itaque natus consequatur, veniam, numquam odio
+            quibusdam necessitatibus architecto est repudiandae quos culpa
+            expedita impedit nam a doloribus vitae obcaecati minima doloremque.
+            Sequi saepe nulla, temporibus fugit animi aperiam architecto vel
+            illo doloremque iste exercitationem officia eligendi harum nam
+            voluptatem! Iusto impedit voluptate vitae? Quo sapiente iste sunt
+            quis soluta distinctio voluptatem quod magni? Vel sed omnis
+            perspiciatis veniam? Architecto, asperiores?
+        </p>
+        <br />
+        <button>Open modal</button>
+        <section id="dialog-backdrop">
+            <div id="dialog">
+                <span id="dialog-question"
+                    >Are you sure you want to delete your account?</span
+                >
+                <section id="dialog-options">
+                    <button
+                        onclick="(() => {document.body.classList.remove('modal-opened')})();"
+                        id="dialog-cancel"
+                    >
+                        Cancel
+                    </button>
+                    <button
+                        onclick="(() => {document.body.classList.remove('modal-opened')})();"
+                        id="dialog-confirm"
+                    >
+                        Confirm
+                        <i class="fa-solid fa-circle-check"></i>
+                    </button>
+                </section>
+            </div>
+        </section>
+    </body>
+</html>
