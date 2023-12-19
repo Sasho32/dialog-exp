@@ -12,6 +12,12 @@ div#dialog.reject-application {
 div#dialog.approve-application {
     --modal-color: #19e194;
 }
+div#dialog.suspend-company {
+    --modal-color: #333;
+}
+div#dialog.reactivate-company {
+    --modal-color: #19e194;
+}
 
 body {
     min-height: 100vh;
