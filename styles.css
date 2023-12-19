@@ -3,6 +3,16 @@
     padding: 0;
 }
 
+div#dialog.delete-account {
+    --modal-color: #cc0000;
+}
+div#dialog.reject-application {
+    --modal-color: #cc0000;
+}
+div#dialog.approve-application {
+    --modal-color: #19e194;
+}
+
 body {
     min-height: 100vh;
     background-color: cyan;
@@ -79,12 +89,20 @@ body.modal-opened
     > div#dialog
     > section#dialog-options
     > button[id*='confirm'] {
-    background-color: hsl(0, 100%, 40%);
+    /* background-color: hsl(0, 100%, 40%); */
+    background-color: var(--modal-color);
     color: #fff;
     display: flex;
     gap: 0.3rem;
     justify-content: center;
     align-items: center;
+}
+
+body.modal-opened > section#dialog-backdrop > div#dialog > i {
+    align-self: center;
+    color: #19fe94;
+    color: var(--modal-color);
+    font-size: 2rem;
 }
 
 @media (pointer: fine) {
